@@ -100,3 +100,13 @@ trap '__vsc_preexec_all "$_"' DEBUG
 __vsc_original_prompt_command=${PROMPT_COMMAND:-}
 git init
 git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/austin0751/worldcup-database
+git push -u origin master
+git remote -v
+git remote set-url origin https://github.com/austin0751/worldcup-database.git
+git remote -v
+git push -u origin master
+git pull origin master --rebase
+git init
+git add .
